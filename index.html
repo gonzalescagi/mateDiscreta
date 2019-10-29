@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+	<title>Matemática Discreta</title>
+</head>
+
+<body>
+   
+    
+    
+    <header>
+        <div class="head_sec1">
+        <!--<img src="https://www.upn.edu.pe/sites/default/themes/arky/images/logo.svg">-->
+        <img src="logo.svg">
+        </div>
+    </header>
+    
+    <main>
+        <aside>
+            <div class="conte-aside" id="accordion">
+            
+                <form class="cont-form" >
+                    <div class="titulo">
+                        <h3>
+                            <a data-toggle="collapse" href="#collapseOne">Formulario</a>
+                            <i class="material-icons">chevron_right</i>
+                        </h3>
+
+                    </div>
+                    <div id="collapseOne" class="formulario collapse show" data-parent="#accordion">
+
+                        <div class="formulario">
+                            <div class="form-group">
+                                <label for="sel1">Seleccione la secuencia:</label>
+                                <select class="form-control" id="sel1">
+                                        <option>Triángulos</option>
+                                        <option>Cuadrados</option>
+                                        <option>Rombos</option>
+                                </select>
+                            </div>
+                          <div class="form-group">
+                            <label for="pwd">Niveles</label>
+                            <input type="number" class="form-control" id="niveles" value="5">
+                          </div>
+                          <div class="form-group form-check">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" id="myCheck" onclick="opcionesShow()"> Opciones avanzadas
+                            </label>
+                          </div>
+                            <!--OP avanzadas-->
+                            <div id="opAvanzadas">
+                                <div class="form-group">
+                                <label for="pwd">Dimensiones</label></div>
+                                <div class="form-group">
+                                    <label for="pwd">Ancho :</label>
+                                    <input type="number" class="form-control" id="ancho" value="40">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pwd">Alto :</label>
+                                    <input type="number" class="form-control" id="alto" value="40">
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="pwd"> Color de Linea :</label>
+                                        <input type="color" class="form-control" id="color" value="#ffffff">
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="pwd"> Color de Figura Simple :</label>
+                                        <input type="color" class="form-control" id="colorFigura" value="#ffffff">
+                                    <div>
+                                    <label>Sin relleno</label>
+                                        <input type="checkbox" id="relleno" checked>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            
+                      </div>
+
+                        <div class="acciones">
+                            <button type="button" class="btn btn-primary" onclick="procesar()">Procesar</button>
+                        </div>
+                    </div>
+
+
+                </form>
+                <div style="display:none;">
+                    <div class="titulo">
+                        <h3>
+                            <a data-toggle="collapse" href="#collapseDos">Resultado</a>
+                            <i class="material-icons">chevron_right</i>
+                        </h3>
+
+                    </div>
+                    <div id="collapseDos" class="collapse" data-parent="#accordion">
+                        <div class="cont-resultados">
+                            <span>Niveles</span><br>
+                            <span>Numero de Lineas Usadas</span><br>
+                            <span>Numero de Figuras</span>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            
+            </div>
+            
+    </aside>
+        <section class="board">
+            <div id="resultados" class="cont-resultados-board">
+                <h5>Resultados</h5>
+                <span>Niveles :<span id="nivelesRes"></span></span><br>
+                <span>Lineas Usadas :<span id="lineasRes"></span></span><br>
+                <span>Figuras simples:<span id="figurasRes"></span></span>
+            </div>
+            <div id="ups" class="ups">
+            <div class="ups_img"></div>
+            </div>
+            <canvas id="myCanvas" class="canvas" width="0" height="1">
+            </canvas>
+        </section>
+
+    </main>
+    
+     
+    <script>
+
+</script> 
+
+<script src="main.js"></script>
+</body>
+</html>
+    

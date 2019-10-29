@@ -1,0 +1,131 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+header{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    background-color: #f7f7f7;
+    
+    -webkit-box-shadow: 0 6px 10px 0 rgba(0,0,0,0.4);
+box-shadow: 0 6px 10px 0 rgba(0,0,0,0.4);
+    z-index: 10;
+}
+.head_sec1{
+    height: 100%;
+    min-width: 200px;
+    width: 30%;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+.head_sec1>img{
+    width: 95%;
+    height: 95%;
+}
+main{
+    position: relative;
+    top: 10vh;
+    background-color: #636363;
+}
+aside{
+    width: 30%;
+    height: 90vh;
+    top: 0px;
+    background-color: #fcf6c2;
+    overflow: hidden;
+    float: left;
+    box-sizing: border-box;
+    z-index: 2;
+    
+}
+.conte-aside{
+    overflow: auto;
+    height: 100%;   
+}
+.cont-form{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.formulario{
+    overflow: auto;
+    height: 75%;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.board{
+    width: 70%;
+    height: 90vh;
+    padding: 20px;
+    box-sizing: border-box;
+    float: right;
+    background-color: #636363;
+    overflow: auto;
+   
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    height: 10%;
+-webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.3);
+box-shadow: 0 4px 5px 0 rgba(0,0,0,0.3);
+}
+.titulo>h3>a{
+    color: black;
+    text-decoration: none;
+}
+#opAvanzadas{
+    display: none;
+}
+.acciones{
+    height: auto;
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    align-items: center;
+}
+.canvas{
+    display: none;
+    border: 0px;
+    position: relative;
+    
+}
+.cont-resultados{
+    padding: 10px;
+}
+.cont-resultados-board{
+    display: none;
+    color: #ffffff;
+}
+.ups{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.ups_img{
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    height: 80px;
+    background-size: contain;
+    background-image: url(https://www.laureate.net/wp-content/uploads/2019/03/UPN.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
