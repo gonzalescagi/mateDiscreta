@@ -49,7 +49,7 @@ if(opcionesShow()){
     if(!opa.checked){
         ctx.fillStyle=inColorFigura;
         ctx.fill();
-    }
+    }FullScreenSupportEnabled() ;
     
 }
     
@@ -77,5 +77,11 @@ function opcionesShow(){
         opc.setAttribute("style","display:none !important");
         return false;
     }
+            function FullScreenSupportEnabled() {
+    return (document.fullscreenEnabled || 
+            document.webkitFullscreenEnabled || 
+            document.mozFullScreenEnabled ||
+            document.msFullscreenEnabled);
+}
     
 }
