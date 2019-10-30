@@ -49,7 +49,7 @@ if(opcionesShow()){
     if(!opa.checked){
         ctx.fillStyle=inColorFigura;
         ctx.fill();
-}
+    }
     
 }
     
@@ -77,7 +77,5 @@ function opcionesShow(){
         opc.setAttribute("style","display:none !important");
         return false;
     }
-            //
-
     
 }
