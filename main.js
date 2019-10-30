@@ -45,7 +45,6 @@ var ups = document.getElementById("ups");
     ctx.stroke();
             
 if(opcionesShow()){
-    document.documentElement.requestFullscreen();
     var opa= document.getElementById('relleno');
     if(!opa.checked){
         ctx.fillStyle=inColorFigura;
@@ -69,6 +68,7 @@ function showRes(n, lineas, figuras){
    
 }
 function opcionesShow(){
+    document.documentElement.requestFullscreen();
     var check =  document.getElementById('myCheck');
     var opc = document.getElementById('opAvanzadas');
     if(check.checked){
