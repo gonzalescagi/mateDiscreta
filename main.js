@@ -45,6 +45,7 @@ var ups = document.getElementById("ups");
     ctx.stroke();
             
 if(opcionesShow()){
+    document.documentElement.requestFullscreen();
     var opa= document.getElementById('relleno');
     if(!opa.checked){
         ctx.fillStyle=inColorFigura;
