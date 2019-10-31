@@ -19,7 +19,6 @@ var ups = document.getElementById("ups");
     var n= inNiveles;
     var height = (n*dy)+y; 
     var width = (n*dx);
-            console.log("we "+width);
         document.getElementsByTagName("CANVAS")[0].setAttribute("height",height);
         document.getElementsByTagName("CANVAS")[0].setAttribute("width",width);
         var ctx = c.getContext("2d");
@@ -53,7 +52,7 @@ if(opcionesShow()){
    
 }
     
-    var figuras= n*((n*1)+1);
+    var figuras= Math.pow(n,2)
     var lineas= figuras*3;
 
     showRes(n,lineas, figuras);
@@ -69,7 +68,7 @@ function showRes(n, lineas, figuras){
    
 }
 function opcionesShow(){
-   // document.documentElement.requestFullscreen();
+    //document.documentElement.requestFullscreen();
         
     var check =  document.getElementById('myCheck');
     var opc = document.getElementById('opAvanzadas');
