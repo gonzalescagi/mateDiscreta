@@ -50,6 +50,11 @@ aside{
     overflow: auto;
     height: 100%;   
 }
+
+.conte-aside-closed{
+    display: none;    
+}
+
 .cont-form{
     position: relative;
     width: 100%;
@@ -139,20 +144,32 @@ box-shadow: 0 4px 5px 0 rgba(0,0,0,0.3);
 
 @media only screen and (max-width: 600px) {
   aside {
-    display: none;
+      display: none;
       position: absolute;
-      width: 70%;
-      z-index: 999;
-      background: #575757;
-      background: rgba(0,0,0,0.6);
-      color: #ffffff;
+      width: 100%;
       margin-top: -10vh;
-    height: 100vh;
-      -webkit-box-shadow: 8px 0 8px -5px rgba(0,0,0,0.7);
-box-shadow: 8px 0 8px -5px rgba(0,0,0,0.7);
+      height: 100vh;
+      color: #ffffff;
+      background: #575757;
+      background: rgba(0,0,0,0.2);
+      z-index: 999;
   }
+    .conte-aside{
+        width: 70%;
+        background: rgba(0,0,0,0.6);
+      
+      z-index: 999;
+      -webkit-box-shadow: 8px 0 8px -5px rgba(0,0,0,0.7);
+      box-shadow: 8px 0 8px -5px rgba(0,0,0,0.7);
+    }
     .titulo{
-        background-color: rgba(0,123,255,1);
+        background-color: #FFB819;
+    }
+    .conte-aside-closed{
+        float: right;
+        display: block;
+        width: 30%;
+        height: 100vh;
     }
     .cont-form {
         padding-top: 0px;
@@ -175,7 +192,9 @@ box-shadow: 8px 0 8px -5px rgba(0,0,0,0.7);
     width: 50%;
     }
     .btn{
-        width: 100%
+        width: 100%;
+        background: #FFB819;
+        border: #FFB819;
     }
     .head_sec2{
         padding: 10px;
