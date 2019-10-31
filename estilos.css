@@ -144,10 +144,19 @@ box-shadow: 0 4px 5px 0 rgba(0,0,0,0.3);
       width: 70%;
       z-index: 999;
       background: #575757;
+      background: rgba(0,0,0,0.6);
       color: #ffffff;
+      margin-top: -10vh;
+    height: 100vh;
       -webkit-box-shadow: 8px 0 8px -5px rgba(0,0,0,0.7);
 box-shadow: 8px 0 8px -5px rgba(0,0,0,0.7);
   }
+    .titulo{
+        background-color: rgba(0,123,255,1);
+    }
+    .cont-form {
+        padding-top: 0px;
+    }
     .titulo>h3>a{
         color: #ffffff;
         font-size: 0.8em;
