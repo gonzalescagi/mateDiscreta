@@ -69,7 +69,7 @@ function showRes(n, lineas, figuras){
    
 }
 function opcionesShow(){
-    document.documentElement.requestFullscreen();
+   // document.documentElement.requestFullscreen();
         
     var check =  document.getElementById('myCheck');
     var opc = document.getElementById('opAvanzadas');
