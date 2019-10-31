@@ -4,6 +4,8 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="estilos.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -18,18 +20,19 @@
 </head>
 
 <body>
-   
-    
     
     <header>
         <div class="head_sec1">
         <!--<img src="https://www.upn.edu.pe/sites/default/themes/arky/images/logo.svg">-->
         <img src="logo.svg">
         </div>
+        <div class="head_sec2">
+            <i class="material-icons" onclick="showMenu()">menu</i>
+        </div>
     </header>
     
     <main>
-        <aside>
+        <aside id="aside">
             <div class="conte-aside" id="accordion">
             
                 <form class="cont-form" >
