@@ -25,6 +25,9 @@ box-shadow: 0 6px 10px 0 rgba(0,0,0,0.4);
     width: 95%;
     height: 95%;
 }
+.head_sec2{
+    display: none;
+}
 main{
     position: relative;
     top: 10vh;
@@ -41,6 +44,7 @@ aside{
     z-index: 2;
     
 }
+
 .conte-aside{
     overflow: auto;
     height: 100%;   
@@ -128,4 +132,40 @@ box-shadow: 0 4px 5px 0 rgba(0,0,0,0.3);
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.8;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  aside {
+    display: none;
+      position: absolute;
+      width: 70%;
+      z-index: 999;
+  }
+    .board{
+        width: 100%;
+        padding: 25px;
+    }
+    header{
+        overflow: hidden;
+        display: flex;
+    }
+    .head_sec1{
+    min-width: 50%;
+    width: 50%;
+    }
+    .head_sec2{
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 600px) {
+  aside {
+    display: block !important;
+    }
 }
