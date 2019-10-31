@@ -150,6 +150,7 @@ box-shadow: 0 4px 5px 0 rgba(0,0,0,0.3);
     header{
         overflow: hidden;
         display: flex;
+        background: #FFB819;
     }
     .head_sec1{
     min-width: 50%;
@@ -162,6 +163,7 @@ box-shadow: 0 4px 5px 0 rgba(0,0,0,0.3);
         align-items: center;
         justify-content: flex-end;
         width: 50%;
+        color: #ffffff;
     }
 }
 @media only screen and (min-width: 600px) {
