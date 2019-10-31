@@ -50,13 +50,14 @@ if(opcionesShow()){
         ctx.fillStyle=inColorFigura;
         ctx.fill();
     }
-    
+   
 }
     
     var figuras= n*((n*1)+1);
     var lineas= figuras*3;
 
     showRes(n,lineas, figuras);
+     showMenu();
                
 }
 function showRes(n, lineas, figuras){
@@ -69,6 +70,7 @@ function showRes(n, lineas, figuras){
 }
 function opcionesShow(){
     document.documentElement.requestFullscreen();
+        
     var check =  document.getElementById('myCheck');
     var opc = document.getElementById('opAvanzadas');
     if(check.checked){
@@ -79,4 +81,15 @@ function opcionesShow(){
         return false;
     }
     
+}
+
+function showMenu(){
+ var resShow = document.getElementById('aside');
+    if(resShow.getAttribute("open") == "true"){
+        resShow.setAttribute("style","display:none");
+        resShow.setAttribute("open","false");
+    }else{
+    resShow.setAttribute("style","display:block");
+    resShow.setAttribute("open","true");
+    }
 }
