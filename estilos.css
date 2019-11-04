@@ -118,6 +118,10 @@ box-shadow: 0 4px 5px 0 rgba(0,0,0,0.3);
 .cont-resultados-board{
     display: none;
     color: #ffffff;
+    justify-content: flex-start;
+}
+.cont-resultados-board>div{
+    margin-right: 10%;
 }
 .ups{
     display: none;
@@ -139,7 +143,9 @@ box-shadow: 0 4px 5px 0 rgba(0,0,0,0.3);
     background-repeat: no-repeat;
     opacity: 0.8;
 }
-
+#text_opcResumnido{
+    display: none;
+}
 
 
 @media only screen and (max-width: 600px) {
